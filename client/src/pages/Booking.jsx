@@ -37,7 +37,7 @@ const Booking = () => {
   const onSubmit = async (data) => {
     setIsSubmitting(true);
     try {
-      await axios.post('http://localhost:5000/api/bookings', data);
+      await axios.post('https://lumiere-salon-rsyt.onrender.com/api/bookings', data);
       toast.success('Appointment requested successfully! We will email you to confirm.');
       setStep(4); // Success step
     } catch (error) {
